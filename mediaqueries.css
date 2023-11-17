@@ -45,6 +45,11 @@
         font-size: 5rem;
     }
 
+    .dishes .box-container .box img{
+        height: 100%;
+        width: 100%;
+    }
+
 }
 
 @media (max-width:450px){
@@ -53,7 +58,7 @@
     }
 
     .dishes .box-container .box img{
-        height: auto;
+        height: 100%;
         width: 100%;
     }
 

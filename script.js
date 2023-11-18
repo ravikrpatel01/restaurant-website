@@ -7,9 +7,10 @@ menu.onclick = () =>{
 }
 
 let section = document.querySelectorAll('section');
-let navlinks = document.querySelectorAll('header .navbar a');
+let navLinks = document.querySelectorAll('header .navbar a');
 
 window.onscroll = () =>{
+
     menu.classList.remove('fa-times');
     navbar.classList.remove('active');
 
@@ -21,9 +22,9 @@ window.onscroll = () =>{
         let id = sec.getAttribute('id');
 
         if(top => offset && top < offset + height){
-            navlinks.forEach(links =>{
-                links.classList.remove('active');
-                document.querySelector('header .navbar a[href*='+id+']').classList.add('active');
+            navLinks.forEach(links =>{
+                // links.classList.remove('active');
+                // document.querySelector('header .navbar a[href*='+id+']').classList.add('active');
             });
         };
 
